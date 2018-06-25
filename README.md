@@ -1,2 +1,2 @@
 # Try github pages
-Personal page
+Personal page: https://arybin93.github.io
