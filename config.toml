@@ -1,0 +1,145 @@
+baseURL = "https://arybin93.github.io/"
+
+# Change the default theme to be use when building the site with Hugo
+theme = "LoveIt"
+
+# website title
+title = "Big Small Data"
+
+# Author config
+[author]
+  name = "Artem Rybin"
+  email = "arybin93@gmail.com"
+  link = ""
+
+paginate = 12
+copyright = ""
+enableEmoji = true
+
+# Menu config
+[menu]
+  [[menu.main]]
+    weight = 1
+    identifier = "posts"
+    # you can add extra information before the name (HTML format is supported), such as icons
+    pre = ""
+    # you can add extra information after the name (HTML format is supported), such as icons
+    post = ""
+    name = "Posts"
+    url = "/posts/"
+    # title will be shown when you hover on this menu link
+    title = ""
+  [[menu.main]]
+    weight = 3
+    identifier = "categories"
+    pre = ""
+    post = ""
+    name = "Categories"
+    url = "/categories/"
+    title = ""
+  [[menu.main]]
+    weight = 4
+    identifier = "test"
+    pre = ""
+    post = ""
+    name = "About"
+    url = "/about/"
+    title = ""
+
+# Markup related configuration in Hugo
+[markup]
+  # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
+  [markup.highlight]
+    # false is a necessary configuration (https://github.com/dillonzq/LoveIt/issues/158)
+    noClasses = false
+
+[params]
+  defaultTheme = "auto"
+
+  # website title for Open Graph and Twitter Cards
+  title = "Big Small Data"
+  # website description for RSS, SEO, Open Graph and Twitter Cards
+  description = "Артём Рыбин, Инженер/Аналитик данных"
+
+# Header config
+[params.header]
+  # desktop header mode ["fixed", "normal", "auto"]
+  desktopMode = "fixed"
+  
+  # mobile header mode ["fixed", "normal", "auto"]
+  mobileMode = "auto"
+  # LoveIt NEW | 0.2.0 Header title config
+  [params.header.title]
+  # URL of the LOGO
+  logo = ""
+  # title name
+  name = "Big Small Data: Artem Rybin"
+  # you can add extra information before the name (HTML format is supported), such as icons
+  pre = ""
+  # you can add extra information after the name (HTML format is supported), such as icons
+  post = ""
+  # LoveIt NEW | 0.2.5 whether to use typeit animation for title name
+  typeit = false
+
+  # Footer config
+[params.footer]
+    enable = true
+    # LoveIt NEW | 0.2.0 Custom content (HTML format is supported)
+    custom = ''
+    # LoveIt NEW | 0.2.0 whether to show Hugo and theme info
+    hugo = true
+    # LoveIt NEW | 0.2.0 whether to show copyright info
+    copyright = true
+    # LoveIt NEW | 0.2.0 whether to show the author
+    author = true
+    # Site creation time
+    since = 2023
+
+    # license info (HTML format is supported)
+    license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+
+[params.search]
+    enable = true
+    # type of search engine ["lunr", "algolia"]
+    type = "lunr"
+    # max index length of the chunked content
+    contentLength = 4000
+    # placeholder of the search bar
+    placeholder = ""
+    # LoveIt NEW | 0.2.1 max number of results length
+    maxResultLength = 10
+    # LoveIt NEW | 0.2.3 snippet length of the result
+    snippetLength = 30
+    # LoveIt NEW | 0.2.1 HTML tag name of the highlight part in results
+    highlightTag = "em"
+
+# Home page config
+[params.home]
+    # Home page profile
+    [params.home.profile]
+      enable = true
+      # LoveIt CHANGED | 0.2.7 title shown in home page (HTML format is supported)
+      title = ""
+      # subtitle shown in home page (HTML format is supported)
+      subtitle = ""
+      # whether to use typeit animation for subtitle
+      typeit = false
+      # whether to show social links
+      social = true
+      # LoveIt NEW | 0.2.0 disclaimer (HTML format is supported)
+      disclaimer = ""
+
+    # Home page posts
+    [params.home.posts]
+      enable = true
+      # special amount of posts in each home posts page
+      paginate = 6
+
+# Social config about the author
+[params.social]
+    GitHub = "arybin93"
+    Linkedin = "artem-rybin-724575119/"
+    Telegram = "bigsmalldata"
+    Stackoverflow = "5239894/artem-rybin"
+    VK = "id11257157"
+    Email = "arybin93@gmail.com"
