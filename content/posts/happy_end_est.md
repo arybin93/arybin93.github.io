@@ -1,4 +1,4 @@
-**---
+---
 title: "Happy end... Welcome back to Russia"
 date: 2016-05-11T09:52:20+03:00
 categories: ["Эстонские заметки"]
@@ -12,7 +12,7 @@ categories: ["Эстонские заметки"]
 
 Сделали селфи на память с соседом:
 
-![Camp](/images/estonia/estonia_selfi_tiago.jpg "Фото с Tiago")**
+![Camp](/images/estonia/estonia_selfi_tiago.jpg "Фото с Tiago")
 
 
 Остальное время я провёл время в офисе, доделывал работу. Составил новые планы по возвращению обратно в Нижний Новгород. Так же приезжал друг, хорошо пообщались.

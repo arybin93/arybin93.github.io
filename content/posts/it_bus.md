@@ -1,6 +1,6 @@
 ---
 title: "It-bus... Problem is an opportunity"
-date: 2016-04-26T09:52:20+03:00
+date: 2016-04-24T09:52:20+03:00
 categories: ["Эстонские заметки"]
 ---
 
