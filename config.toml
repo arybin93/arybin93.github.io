@@ -38,6 +38,14 @@ enableEmoji = true
     url = "/categories/"
     title = ""
   [[menu.main]]
+    weight = 3
+    identifier = "feedback"
+    pre = ""
+    post = ""
+    name = "Feedback"
+    url = "/feedback/"
+    title = ""
+  [[menu.main]]
     weight = 4
     identifier = "test"
     pre = ""
