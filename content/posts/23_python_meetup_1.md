@@ -2,7 +2,6 @@
 title: "rannts #20 - мой первый meetup"
 date: 2018-08-26T11:01:32+03:00
 categories: ["Meetups"]
-draft: true
 ---
 
 rannts #20 - мой первый meetup
