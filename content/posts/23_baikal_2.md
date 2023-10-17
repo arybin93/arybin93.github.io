@@ -12,7 +12,7 @@ categories: ["Отпуск", "Байкал"]
 
 [Часть 1](https://arybin93.github.io/posts/22_baikal_1/) - вступление
 
-[Часть 3](https://arybin93.github.io/posts/23_baikal_3/) - краткие итоги, впечатления
+[Часть 3](https://arybin93.github.io/posts/24_baikal_3/) - краткие итоги, впечатления
 
 ---
 

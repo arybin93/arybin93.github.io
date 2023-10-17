@@ -10,7 +10,7 @@ categories: ["Отпуск", "Байкал"]
 
 Все посты о Байкале:
 
-[Часть 1](https://arybin93.github.io/posts/23_baikal_1/) - вступление
+[Часть 1](https://arybin93.github.io/posts/22_baikal_1/) - вступление
 
 [Часть 2](https://arybin93.github.io/posts/23_baikal_2/) - подготовка
 
