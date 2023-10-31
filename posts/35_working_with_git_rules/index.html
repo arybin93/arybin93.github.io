@@ -1,0 +1,180 @@
+<!doctype html><html lang>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=robots content="noodp">
+<title>Договоренности по git - шаблон - Big Small Data</title><meta name=Description content="Артём Рыбин, Инженер/Аналитик данных"><meta property="og:title" content="Договоренности по git - шаблон">
+<meta property="og:description" content="Практически в каждом проекте к которому я присоединялся, старый или новый, в любом случае
+договоренности по git либо были, но им мало кто следовал или описывались с нуля.
+Поэтому решил, написать шаблон по договоренностям работы с git, который можно переиспользовать/адаптировать в зависимости от
+потребности/правил в компании и проекте.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://arybin93.github.io/posts/35_working_with_git_rules/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2023-03-01T09:52:20+03:00">
+<meta property="article:modified_time" content="2023-03-01T09:52:20+03:00"><meta property="og:site_name" content="Big Small Data">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="Договоренности по git - шаблон">
+<meta name=twitter:description content="Практически в каждом проекте к которому я присоединялся, старый или новый, в любом случае
+договоренности по git либо были, но им мало кто следовал или описывались с нуля.
+Поэтому решил, написать шаблон по договоренностям работы с git, который можно переиспользовать/адаптировать в зависимости от
+потребности/правил в компании и проекте.">
+<meta name=application-name content="My cool site">
+<meta name=apple-mobile-web-app-title content="My cool site"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
+<link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://arybin93.github.io/posts/35_working_with_git_rules/><link rel=prev href=https://arybin93.github.io/posts/34_case_city_tz/><link rel=stylesheet href=/css/style.min.css><link rel=preload href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css as=style onload="this.onload=null,this.rel='stylesheet'">
+<noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css></noscript><link rel=preload href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css as=style onload="this.onload=null,this.rel='stylesheet'">
+<noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Договоренности по git - шаблон","inLanguage":"","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/arybin93.github.io\/posts\/35_working_with_git_rules\/"},"genre":"posts","wordcount":386,"url":"https:\/\/arybin93.github.io\/posts\/35_working_with_git_rules\/","datePublished":"2023-03-01T09:52:20+03:00","dateModified":"2023-03-01T09:52:20+03:00","publisher":{"@type":"Organization","name":""},"author":{"@type":"Person","name":"Artem Rybin"},"description":""}</script></head>
+<body data-header-desktop=fixed data-header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script>
+<div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
+<div class=header-wrapper>
+<div class=header-title>
+<a href=/ title="Big Small Data">Big Small Data: Artem Rybin</a>
+</div>
+<div class=menu>
+<div class=menu-inner><a class=menu-item href=/posts/> Posts </a><a class=menu-item href=/categories/> Categories </a><a class=menu-item href=/feedback/> Feedback </a><a class=menu-item href=/about/> About </a><span class="menu-item delimiter"></span><span class="menu-item search" id=search-desktop>
+<input type=text placeholder="Search titles or contents..." id=search-input-desktop>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-desktop title=Search>
+<i class="fas fa-search fa-fw" aria-hidden=true></i>
+</a>
+<a href=javascript:void(0); class="search-button search-clear" id=search-clear-desktop title=Clear>
+<i class="fas fa-times-circle fa-fw" aria-hidden=true></i>
+</a>
+<span class="search-button search-loading" id=search-loading-desktop>
+<i class="fas fa-spinner fa-fw fa-spin" aria-hidden=true></i>
+</span>
+</span><a href=javascript:void(0); class="menu-item theme-switch" title="Switch Theme">
+<i class="fas fa-adjust fa-fw" aria-hidden=true></i>
+</a></div>
+</div>
+</div>
+</header><header class=mobile id=header-mobile>
+<div class=header-container>
+<div class=header-wrapper>
+<div class=header-title>
+<a href=/ title="Big Small Data">Big Small Data: Artem Rybin</a>
+</div>
+<div class=menu-toggle id=menu-toggle-mobile>
+<span></span><span></span><span></span>
+</div>
+</div>
+<div class=menu id=menu-mobile><div class=search-wrapper>
+<div class="search mobile" id=search-mobile>
+<input type=text placeholder="Search titles or contents..." id=search-input-mobile>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-mobile title=Search>
+<i class="fas fa-search fa-fw" aria-hidden=true></i>
+</a>
+<a href=javascript:void(0); class="search-button search-clear" id=search-clear-mobile title=Clear>
+<i class="fas fa-times-circle fa-fw" aria-hidden=true></i>
+</a>
+<span class="search-button search-loading" id=search-loading-mobile>
+<i class="fas fa-spinner fa-fw fa-spin" aria-hidden=true></i>
+</span>
+</div>
+<a href=javascript:void(0); class=search-cancel id=search-cancel-mobile>
+Cancel
+</a>
+</div><a class=menu-item href=/posts/ title>Posts</a><a class=menu-item href=/categories/ title>Categories</a><a class=menu-item href=/feedback/ title>Feedback</a><a class=menu-item href=/about/ title>About</a><a href=javascript:void(0); class="menu-item theme-switch" title="Switch Theme">
+<i class="fas fa-adjust fa-fw" aria-hidden=true></i>
+</a></div>
+</div>
+</header><div class="search-dropdown desktop">
+<div id=search-dropdown-desktop></div>
+</div>
+<div class="search-dropdown mobile">
+<div id=search-dropdown-mobile></div>
+</div><main class=main>
+<div class=container><div class=toc id=toc-auto>
+<h2 class=toc-title>Contents</h2>
+<div class=toc-content id=toc-content-auto></div>
+</div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Договоренности по git - шаблон</h1><div class=post-meta>
+<div class=post-meta-line><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw" aria-hidden=true></i>Artem Rybin</a></span>&nbsp;<span class=post-category>included in <a href=/categories/git/><i class="far fa-folder fa-fw" aria-hidden=true></i>git</a></span></div>
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw" aria-hidden=true></i>&nbsp;<time datetime=2023-03-01>2023-03-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden=true></i>&nbsp;386 words&nbsp;
+<i class="far fa-clock fa-fw" aria-hidden=true></i>&nbsp;2 minutes&nbsp;</div>
+</div><div class="details toc" id=toc-static data-kept>
+<div class="details-summary toc-title">
+<span>Contents</span>
+<span><i class="details-icon fas fa-angle-right" aria-hidden=true></i></span>
+</div>
+<div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents>
+<ul>
+<li><a href=#соглашение-о-наименовании-бранчей>Соглашение о наименовании бранчей:</a></li>
+<li><a href=#наименование-коммитов-и-общие-рекомендации>Наименование коммитов и общие рекомендации:</a></li>
+<li><a href=#pull-requests>Pull requests</a></li>
+<li><a href=#правила-проведения-code-review>Правила проведения Code Review</a></li>
+</ul>
+</nav></div>
+</div><div class=content id=content><p>Практически в каждом проекте к которому я присоединялся, старый или новый, в любом случае
+договоренности по git либо были, но им мало кто следовал или описывались с нуля.</p>
+<p>Поэтому решил, написать шаблон по договоренностям работы с git, который можно переиспользовать/адаптировать в зависимости от
+потребности/правил в компании и проекте.</p>
+<h1 id=правила-работы-с-git>Правила работы с git</h1>
+<p>Каждая новая задача делается в рамках отдельной ветки (branch).
+При разработке всегда создаём бранч от master ветки (push напрямую в master запрещён).</p>
+<h2 id=соглашение-о-наименовании-бранчей>Соглашение о наименовании бранчей:</h2>
+<p>Наименование бранчей: <code>&lt;номер задачи в task tracker>_&lt;описание опиционально></code></p>
+<p>Например: <code>JIRA-1010_dag_payments</code> или просто <code>JIRA-1010</code></p>
+<p>Каждое изменение проводим через dev, затем через механизм Code Review (Pull request/Merge request) осуществляем merge в master.</p>
+<p><strong>Code review - обязателен!!!</strong></p>
+<h2 id=наименование-коммитов-и-общие-рекомендации>Наименование коммитов и общие рекомендации:</h2>
+<ol>
+<li>Все коммиты пишутся на английском языке</li>
+<li>Все коммиты должны иметь следующий формат <code>&lt;номер задачи> &lt;глагол> &lt;субъект> &lt;детали></code> .
+Пример: <code>JIRA-1010 Add dag for prosessing payments</code></li>
+<li>Опционально: писать подробности коммита в произвольной форме отступив 1 строку от заголовка.</li>
+<li>Недопустимо делать подряд несколько коммитов с одинаковой подписью. Исключение: на своём бранче в разработке и squash перед merge в master.</li>
+<li>В коммитах необходимо использовать термины из словаря проекта.</li>
+<li>Название коммита должно показывать бизнес изменения, если они были, а не изменения в кодовой базе.</li>
+</ol>
+<h2 id=pull-requests>Pull requests</h2>
+<p>Внесение всех изменений в стабильные ветви репозитория осуществляются через pull request&rsquo;ы.</p>
+<p>С целью обмена опытом в команде, предотвращения слияния ошибочных изменений, выявления ошибок,
+нарушений стилей кодирования, все PRs проходят обязательную проверку Code Review.</p>
+<h2 id=правила-проведения-code-review>Правила проведения Code Review</h2>
+<ol>
+<li>Проверяется только область с непосредственными изменениями, изменения вне области изменяемого кода проверять не рекомендуется,
+за исключением случаев, когда изменения вне изменяемой области критичны в рамках выполняемых работ.
+Данное правило ведено с целью повышения скорости принятия изменений, предотвращения затягивания процесса реализации работ.</li>
+<li>Все предложения, замечания, комментарии должны быть понятны. Запрещены оскорбительные высказывания,
+неконструктивная критика в адрес коммитера. Все предложения и замечания должны относиться только к коду и нести конструктивный характер.</li>
+<li>При наличии замечаний и предложений, ревьюер может отправлять изменения на доработку.
+При этом в PR должна присутствовать содержательная часть предложений и замечаний.</li>
+<li>При слиянии проверяется наличие неразрешенных замечаний (не находящихся в статусе Closed) и дополнительных проверок CI если есть.
+При их наличии изменения отправляются на доработку.</li>
+</ol>
+<p>После проведения всех проверок необходимо слить изменения (Merge and squash) и удалить слитую ветвь с сервера.</p>
+<hr>
+<p>Если что, этот шаблон возможно поможет кому-то быстро внедрить правила в команде.</p>
+<p>Планирую улучшать его по мере накопления кейсов.</p></div><div class=post-footer id=post-footer>
+<div class=post-info>
+<div class=post-info-line>
+<div class=post-info-mod>
+<span>Updated on 2023-03-01</span>
+</div></div>
+<div class=post-info-line>
+<div class=post-info-md></div>
+<div class=post-info-share>
+<span><a href=javascript:void(0); title="Share on Twitter" data-sharer=twitter data-url=https://arybin93.github.io/posts/35_working_with_git_rules/ data-title="Договоренности по git - шаблон"><i class="fab fa-twitter fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Facebook" data-sharer=facebook data-url=https://arybin93.github.io/posts/35_working_with_git_rules/><i class="fab fa-facebook-square fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Hacker News" data-sharer=hackernews data-url=https://arybin93.github.io/posts/35_working_with_git_rules/ data-title="Договоренности по git - шаблон"><i class="fab fa-hacker-news fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Line" data-sharer=line data-url=https://arybin93.github.io/posts/35_working_with_git_rules/ data-title="Договоренности по git - шаблон"><i data-svg-src=https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg aria-hidden=true></i></a><a href=javascript:void(0); title="Share on 微博" data-sharer=weibo data-url=https://arybin93.github.io/posts/35_working_with_git_rules/ data-title="Договоренности по git - шаблон"><i class="fab fa-weibo fa-fw" aria-hidden=true></i></a></span>
+</div>
+</div>
+</div>
+<div class=post-info-more>
+<section class=post-tags></section>
+<section>
+<span><a href=javascript:void(0); onclick=window.history.back()>Back</a></span>&nbsp;|&nbsp;<span><a href=/>Home</a></span>
+</section>
+</div>
+<div class=post-nav><a href=/posts/34_case_city_tz/ class=prev rel=prev title="Case: AI, Города и time zones"><i class="fas fa-angle-left fa-fw" aria-hidden=true></i>Case: AI, Города и time zones</a></div>
+</div>
+</article></div>
+</main><footer class=footer>
+<div class=footer-container><div class=footer-line>Powered by <a href=https://gohugo.io/ target=_blank rel="noopener noreffer" title="Hugo 0.91.2">Hugo</a> | Theme - <a href=https://github.com/dillonzq/LoveIt target=_blank rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden=true></i> LoveIt</a>
+</div><div class=footer-line itemscope itemtype=http://schema.org/CreativeWork><i class="far fa-copyright fa-fw" aria-hidden=true></i><span itemprop=copyrightYear>2023</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=/ target=_blank>Artem Rybin</a></span>&nbsp;|&nbsp;<span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div>
+</div>
+</footer></div>
+<div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title="Back to Top">
+<i class="fas fa-arrow-up fa-fw" aria-hidden=true></i>
+</a><a href=# id=view-comments class=fixed-button title="View Comments">
+<i class="fas fa-comment fa-fw" aria-hidden=true></i>
+</a>
+</div><script type=text/javascript src=https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"Copy to clipboard",maxShownLines:50},comment:{},search:{highlightTag:"em",maxResultLength:10,noResultsFound:"No results found",snippetLength:30}}</script><script type=text/javascript src=/js/theme.min.js></script></body>
+</html>
