@@ -151,3 +151,6 @@ enableEmoji = true
     Stackoverflow = "5239894/artem-rybin"
     VK = "id11257157"
     Email = "arybin93@gmail.com"
+
+[params.page]
+    lightgallery = true
